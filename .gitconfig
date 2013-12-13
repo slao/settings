@@ -1,0 +1,25 @@
+[user]
+	name = Sean Lao
+[push]
+	default = current
+[alias]
+	co = checkout
+	st = status --short
+	b = branch
+	su = submodule
+	suu = submodule update --init --recursive --force
+	d = diff
+	dc = diff --cached
+	pr = pull --rebase
+	h = rev-parse --short HEAD
+[color]
+	ui = true
+[merge]
+	keepBackup = false
+	tool = p4merge
+[mergetool "p4merge"]
+	cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+
