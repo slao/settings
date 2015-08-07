@@ -12,6 +12,7 @@
 	dc = diff --cached
 	pr = pull --rebase
 	h = rev-parse --short HEAD
+	rh = reset HEAD
 [color]
 	ui = true
 [merge]
